@@ -1,0 +1,16 @@
+#ifndef include_mem_h__
+#define include_mem_h__
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+#include "../mem/memcmp.h"
+#include "../mem/memcpy.h"
+#include "../mem/memfind.h"
+#include "../mem/memreplace.h"
+#include "../mem/memsearch.h"
+#include "../mem/memset.h"
+#include "../mem/memspn.h"
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+#endif // include_mem_h__

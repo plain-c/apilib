@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{19D2F753-770D-47A3-91B3-CCAE5C3FB4CC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>apilib</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140_xp</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>
+    </TargetExt>
+    <ExtensionsToDeleteOnClean />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <BuildLog>
+      <Path>
+      </Path>
+    </BuildLog>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="hde\hde32.cpp" />
+    <ClCompile Include="hde\hde64.cpp" />
+    <ClCompile Include="hook\splice.cpp" />
+    <ClCompile Include="hook\spliceimport.cpp" />
+    <ClCompile Include="hook\splice32.cpp" />
+    <ClCompile Include="hook\splice64.cpp" />
+    <ClCompile Include="hook\spliceplaces32.cpp" />
+    <ClCompile Include="hook\spliceplaces64.cpp" />
+    <ClCompile Include="hook\splicebridge32.cpp" />
+    <ClCompile Include="hook\splicebridge64.cpp" />
+    <ClCompile Include="hook\splicejumper32.cpp" />
+    <ClCompile Include="hook\splicejumper64.cpp" />
+    <ClCompile Include="hook\splicerouter64.cpp" />
+    <ClCompile Include="mem\memfind.cpp" />
+    <ClCompile Include="mem\memcmp.cpp" />
+    <ClCompile Include="mem\memcpy.cpp" />
+    <ClCompile Include="mem\memreplace.cpp" />
+    <ClCompile Include="mem\memsearch.cpp" />
+    <ClCompile Include="mem\memset.cpp" />
+    <ClCompile Include="mem\memspn.cpp" />
+    <ClCompile Include="mpack\mpackread.cpp" />
+    <ClCompile Include="mpack\mpackwrite.cpp" />
+    <ClCompile Include="str\chr.cpp" />
+    <ClCompile Include="str\chrcmp.cpp" />
+    <ClCompile Include="str\chrnum.cpp" />
+    <ClCompile Include="str\strcat.cpp" />
+    <ClCompile Include="str\strchr.cpp" />
+    <ClCompile Include="str\strcmp.cpp" />
+    <ClCompile Include="str\strcpy.cpp" />
+    <ClCompile Include="str\strenc.cpp" />
+    <ClCompile Include="str\strhex.cpp" />
+    <ClCompile Include="str\strlen.cpp" />
+    <ClCompile Include="str\strmem.cpp" />
+    <ClCompile Include="str\strspn.cpp" />
+    <ClCompile Include="str\strstr.cpp" />
+    <ClCompile Include="str\strnum.cpp" />
+    <ClCompile Include="str\strtrim.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hde\hde32.h" />
+    <ClInclude Include="hde\hde64.h" />
+    <ClInclude Include="hde\tbl32.h" />
+    <ClInclude Include="hde\tbl64.h" />
+    <ClInclude Include="hook\splice.h" />
+    <ClInclude Include="hook\spliceimport.h" />
+    <ClInclude Include="hook\spliceplaces32.h" />
+    <ClInclude Include="hook\spliceplaces64.h" />
+    <ClInclude Include="hook\splicebridge32.h" />
+    <ClInclude Include="hook\splicebridge64.h" />
+    <ClInclude Include="hook\splicejumper32.h" />
+    <ClInclude Include="hook\splicejumper64.h" />
+    <ClInclude Include="hook\splicerouter64.h" />
+    <ClInclude Include="mem\memfind.h" />
+    <ClInclude Include="mem\memcmp.h" />
+    <ClInclude Include="mem\memcpy.h" />
+    <ClInclude Include="mem\memreplace.h" />
+    <ClInclude Include="mem\memreplace.hpp" />
+    <ClInclude Include="mem\memsearch.h" />
+    <ClInclude Include="mem\memsearch.hpp" />
+    <ClInclude Include="mem\memset.h" />
+    <ClInclude Include="mem\memspn.h" />
+    <ClInclude Include="mem\memspn.hpp" />
+    <ClInclude Include="mpack\mpack.h" />
+    <ClInclude Include="mpack\mpackread.h" />
+    <ClInclude Include="mpack\mpackwrite.h" />
+    <ClInclude Include="str\chr.h" />
+    <ClInclude Include="str\chr.hpp" />
+    <ClInclude Include="str\chrcmp.h" />
+    <ClInclude Include="str\chrcmp.hpp" />
+    <ClInclude Include="str\chrnum.h" />
+    <ClInclude Include="str\chrnum.hpp" />
+    <ClInclude Include="str\strcat.h" />
+    <ClInclude Include="str\strcat.hpp" />
+    <ClInclude Include="str\strchr.h" />
+    <ClInclude Include="str\strchr.hpp" />
+    <ClInclude Include="str\strcmp.h" />
+    <ClInclude Include="str\strcmp.hpp" />
+    <ClInclude Include="str\strcpy.h" />
+    <ClInclude Include="str\strcpy.hpp" />
+    <ClInclude Include="str\strenc.h" />
+    <ClInclude Include="str\strenc.hpp" />
+    <ClInclude Include="str\strhex.h" />
+    <ClInclude Include="str\strhex.hpp" />
+    <ClInclude Include="str\strlen.h" />
+    <ClInclude Include="str\strlen.hpp" />
+    <ClInclude Include="str\strmem.h" />
+    <ClInclude Include="str\strmem.hpp" />
+    <ClInclude Include="str\strnum.h" />
+    <ClInclude Include="str\strspn.h" />
+    <ClInclude Include="str\strspn.hpp" />
+    <ClInclude Include="str\strstr.h" />
+    <ClInclude Include="str\strstr.hpp" />
+    <ClInclude Include="str\strnum.hpp" />
+    <ClInclude Include="str\strtrim.h" />
+    <ClInclude Include="str\strtrim.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

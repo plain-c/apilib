@@ -1,0 +1,303 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="str">
+      <UniqueIdentifier>{d1a445c1-be83-49e0-bd54-b905c8a811f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mem">
+      <UniqueIdentifier>{793f78c5-1859-40c8-9afc-82ec8fa7f786}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="hde">
+      <UniqueIdentifier>{d72f3017-7a1c-4ae1-8286-3d912f5d6da5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="splice">
+      <UniqueIdentifier>{4212ff47-37db-4747-be79-2c5cddba2999}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mpack">
+      <UniqueIdentifier>{600b6f63-a010-4ad9-b4a5-519d2420b73c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="str\chr.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strcat.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strchr.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strcmp.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strcpy.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strlen.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strmem.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strspn.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strstr.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strtrim.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strnum.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\chrnum.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\chrcmp.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strenc.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\memcmp.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\memcpy.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\memset.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\memfind.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\memsearch.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\memreplace.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="hde\hde32.cpp">
+      <Filter>hde</Filter>
+    </ClCompile>
+    <ClCompile Include="hde\hde64.cpp">
+      <Filter>hde</Filter>
+    </ClCompile>
+    <ClCompile Include="mem\memspn.cpp">
+      <Filter>mem</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\splice64.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\splice32.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\splicebridge32.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\splicebridge64.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\splicejumper32.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\splicejumper64.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\spliceimport.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\spliceplaces64.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\spliceplaces32.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\splice.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="hook\splicerouter64.cpp">
+      <Filter>splice</Filter>
+    </ClCompile>
+    <ClCompile Include="mpack\mpackread.cpp">
+      <Filter>mpack</Filter>
+    </ClCompile>
+    <ClCompile Include="mpack\mpackwrite.cpp">
+      <Filter>mpack</Filter>
+    </ClCompile>
+    <ClCompile Include="str\strhex.cpp">
+      <Filter>str</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="str\chr.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strcat.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strchr.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strcmp.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strcpy.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strlen.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strmem.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strspn.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strstr.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strtrim.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strnum.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\chrnum.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\chrcmp.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strenc.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\chrcmp.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\chr.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\chrnum.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strcat.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strchr.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strcmp.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strcpy.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strenc.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strlen.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strmem.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strnum.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strspn.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strstr.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strtrim.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memcmp.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memcpy.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memset.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memfind.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memsearch.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memreplace.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memreplace.hpp">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memsearch.hpp">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde32.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\hde64.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\tbl32.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="hde\tbl64.h">
+      <Filter>hde</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memspn.h">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="mem\memspn.hpp">
+      <Filter>mem</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\splicebridge32.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\splicebridge64.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\splicejumper32.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\splicejumper64.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\spliceimport.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\spliceplaces64.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\spliceplaces32.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\splice.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="hook\splicerouter64.h">
+      <Filter>splice</Filter>
+    </ClInclude>
+    <ClInclude Include="mpack\mpackread.h">
+      <Filter>mpack</Filter>
+    </ClInclude>
+    <ClInclude Include="mpack\mpackwrite.h">
+      <Filter>mpack</Filter>
+    </ClInclude>
+    <ClInclude Include="mpack\mpack.h">
+      <Filter>mpack</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strhex.h">
+      <Filter>str</Filter>
+    </ClInclude>
+    <ClInclude Include="str\strhex.hpp">
+      <Filter>str</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
